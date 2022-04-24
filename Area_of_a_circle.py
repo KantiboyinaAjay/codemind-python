@@ -1,3 +1,3 @@
-r = float(input())
-m = 3.14*r*r
-print(format(m,".2f"))
+x = eval(input())
+z = 3.14*x*x
+print(format(z,".2f"))
