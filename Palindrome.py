@@ -1,4 +1,4 @@
-x = eval(input())
+x = int(input())
 b=x
 s=0
 while x!=0:
