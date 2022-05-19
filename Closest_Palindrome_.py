@@ -1,4 +1,5 @@
-def is_palin(j):
+def is_palin(j): 
+
     m = j
     s=0
     while m!=0:
