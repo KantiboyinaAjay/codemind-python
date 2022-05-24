@@ -1,16 +1,11 @@
 x = int(input())
 l = list(map(int,input().split()))
-c=0
 k=[]
+c=0
 for i in list(set(l)):
-    for j in l:
-        if i==j:
-            c+=1
-    if i==c:
+    if l.count(i)==i:
         k.append(i)
-    c=0
-if k==[]:
+if k == []:
     print('-1')
 else:
     print(format(sum(k)/len(k),".2f"))
-        
