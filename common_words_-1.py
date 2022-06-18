@@ -1,13 +1,7 @@
-x = list(map(str,input().split()))
-y = list(map(str,input().split()))
+x = list(map(str,input().lower().split()))
+y = list(map(str,input().lower().split()))
 c=0
-d=[]
-e=[]
 for i in x:
-   d.append(i.lower())
-for j in y:
-    e.append(j.lower())
-for k in d:
-    if e.count(k)!=0:
+    if y.count(i)==1:
         c+=1
 print(c)
