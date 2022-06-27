@@ -1,28 +1,19 @@
-def prime(j):
-    i=2
-    v=0
-    while i!=j:
-        if j%i==0:
-            v=1
-        i+=1
-    if v==0:
-        return j
-
-def is_palin(j): 
-
-    m = j
-    s=0
-    while m!=0:
-        v = m%10
-        s = s*10+v
-        m = m//10
-    if j==s:
-        return j
-x = int(input())
-g = x+1
-while g!=0:
-    if is_palin(g):
-        if prime(g):
-            print(g)
+def prime(n):
+    if n==1:
+        return 0
+    for i in range(2,int(n**0.5)+1,1):
+        if n%i==0:
+            return 0
             break
-    g+=1
+    return 1
+x = int(input())
+y= x+1
+while True:
+    if prime(y):
+        n = str(y)
+        a = n[::-1]
+        if a==n:
+            if prime(int(a)):
+                print(a)
+                break
+    y+=1
