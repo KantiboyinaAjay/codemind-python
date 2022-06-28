@@ -1,12 +1,14 @@
-x = int(input())
+x = eval(input())
+a = 0
+b = 1
 if x==0:
-    print(True)
-a,b=1,0
-for i in range(x-1):
-    c = a+b
-    a,b=b,c
-    if x==c:
-        print(True)
-        break
+    print("True")
+c = a+b
+while c<x:
+    c = a + b
+    a = b 
+    b = c
+if x==c:
+    print("True")
 else:
-    print(False)
+    print("False")
