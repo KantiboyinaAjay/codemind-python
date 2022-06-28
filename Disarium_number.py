@@ -1,14 +1,8 @@
-x = int(input())
-n = len(str(x))
-b=x
+x = input()
 s=0
-while x!=0:
-    v = x%10
-    x = x//10
-    m = v**n
-    s+=m
-    n-=1
-if b==s:
-    print("True")
+for i in range(len(x)):
+    s+=(int(x[i])**(i+1))
+if s==int(x):
+    print(True)
 else:
-    print("False")
+    print(False)
