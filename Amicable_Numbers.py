@@ -1,14 +1,13 @@
-x = eval(input())
-y = eval(input())
-s = 0
-n = 0
+x = int(input())
+y = int(input())
+a,b=0,0
 for i in range(1,x):
     if x%i==0:
-        s+=i
+        a+=i
 for i in range(1,y):
     if y%i==0:
-        n+=i
-if s==y or n==x:
-    print("Amicable")
+        b+=i
+if a==y and b==x:
+    print('Amicable')
 else:
-    print("Not Amicable")
+    print('Not Amicable')
