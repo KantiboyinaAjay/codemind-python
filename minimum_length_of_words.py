@@ -1,9 +1,5 @@
 x = list(map(str,input().split()))
-a=[]
+b=[]
 for i in x:
-    c=0
-    for j in i:
-        c+=1
-    a.append(c)
-    c=0
-print(min(a))
+    b.append(len(str(i)))
+print(min(b))
