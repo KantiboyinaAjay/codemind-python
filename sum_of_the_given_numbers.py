@@ -1,4 +1,4 @@
-x =eval(input())
+x = int(input())
 for i in range(x):
-    v = list(map(int,input().split()))
-    print(sum(v))
+    a , b = map(int,input().split())
+    print(a+b)
