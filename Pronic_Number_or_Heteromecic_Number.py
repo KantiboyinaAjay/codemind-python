@@ -1,10 +1,8 @@
-x = eval(input())
+x = int(input())
 c=0
-for i in range(x):
-    if i * (i+1) == x:
-        c+=1
-        break
-if c==1:
-    print('YES')
-else:
-    print("NO")
+for i in range(1,x//2):
+    if i*(i+1)==x:
+        print('YES')
+        c=1
+if c==0:
+    print('NO')
