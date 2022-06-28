@@ -1,4 +1,4 @@
 x = list(map(str,input().split()))
-n = x[::-1]
-for i in n:
+x=x[::-1]
+for i in x:
     print(i[::-1],end=" ")
