@@ -1,9 +1,21 @@
-def palin(i):
-    s = str(i)
-    m = int(s[::-1])
-    return m
 x = int(input())
 l = list(map(int,input().split()))
 for i in l:
-    n = palin(i)
-    print(n,end=" ")
+    if i<0:
+        i = i*-1
+        s=0
+        while i!=0:
+            n = i%10
+            s = s*10+n
+            i//=10
+        print('-',end="")
+        print(s,end=" ")
+        s=0
+    else:
+        s=0
+        while i!=0:
+            n = i%10
+            s = s*10+n
+            i//=10
+        print(s,end=" ")
+        s=0
