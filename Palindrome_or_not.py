@@ -1,7 +1,6 @@
-x = input()
-n = x.lower()
-m = n[::-1]
-if m==n:
+x = input().lower()
+y = x[::-1]
+if x==y:
     print(True)
 else:
     print(False)
