@@ -1,9 +1,11 @@
 x = list(map(str,input().split()))
-a = len(x)
-x = x[a-1]
+x = x[len(x)-1]
 n = min(x)
-m = n.lower()
-if x.count(m)!=0:
-    print(m)
+m=n
+if n.isupper():
+    if n.lower() in x:
+        print(n.lower())
+    else:
+        print(n)
 else:
     print(n)
