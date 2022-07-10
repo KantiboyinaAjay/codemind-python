@@ -1,7 +1,7 @@
-x = input()
-c=0
-for i in x:
+z = input().lower()
+s=0
+for i in sorted(z):
     if i>='a' and i<='z':
-        if x.count(i)==1:
-            c+=1
-print(c)
+        if z.count(i)==1:
+            s+=1
+print(s)
