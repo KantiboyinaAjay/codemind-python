@@ -1,13 +1,10 @@
-s = input()
-t = input()
-t = t.lower()
-t = list(t)
-s = s.lower()
+a=input().lower()
+b=input().lower()
 c=0
-for i in s:
-    if t.count(i)==1:
+for i in a:
+    if i in b:
         c+=1
-if c==len(s):
+if c==len(a):
     print(True)
 else:
     print(False)
