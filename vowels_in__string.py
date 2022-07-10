@@ -1,12 +1,9 @@
 x = input()
-d=[]
-for i in x:
-    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
-        d.append(i)
-    elif i=='A' or i=='E' or i=='I' or i=='O' or i=='U':
-        d.append(i)
-d = sorted(set(d),key=d.index)
-if d!=[]:
-    print(*d)
-else:
-    print('-1')
+l = ['a','e','i','o','u']
+m = ['A','E','I','O','U']
+k=[]
+for i in sorted(set(x),key=x.index):
+    if (i in l) or (i in m):
+        k.append(i)
+print(*k)
+    
