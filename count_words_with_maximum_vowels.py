@@ -1,13 +1,12 @@
-x = list(map(str,input().split()))
-c=0
-d=[]
+x = list(map(str,input().lower().split()))
+n = []
+s=0
+l = ['a','e','i','o','u']
 for i in x:
     for j in i:
-        if j=='a' or j=='e' or j=='i' or j=='o' or j=='u':
-            c+=1
-        elif j=='A' or j=='E' or j=='I' or j=='O' or j=='U':
-            c+=1
-    d.append(c)
-    c=0
-n = max(d)
-print(d.count(n))
+        if j in l:
+            s+=1
+    n.append(s)
+    s=0
+m=max(n)
+print(n.count(m))
