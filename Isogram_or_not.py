@@ -1,9 +1,6 @@
 x = input()
-c=0
-for i in x:
-    if x.count(i)==1:
-        c+=1
-if c==len(x):
+s = set(x)
+if len(x)==len(s):
     print(True)
 else:
     print(False)
