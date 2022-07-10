@@ -1,9 +1,11 @@
 x = input()
 c=0
 for i in x:
-    if i>='a' and i<='z':
+    if i.isdigit():
         pass
-    elif i>='A' and i<='Z':
+    elif i.islower():
+        pass
+    elif i.isupper():
         pass
     elif i==' ':
         pass
