@@ -1,16 +1,32 @@
-x =(input())
-c=[]
-d=[]
+x = input()
+m=[]
+l=[]
 for i in x:
-    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
-        c.append(i)
-    elif i=='A' or i=='E' or i=='O' or i=='I' or i=='U':
-        d.append(i)
-n = len(set(c))
-m= len(set(d))
-if n==5:
+    if i=='a':
+        l.append('a')
+    elif i=='e':
+        l.append('e')
+    elif i=='i':
+        l.append('i')
+    elif i=='o':
+        l.append('o')
+    elif i=='u':
+        l.append('u')
+    elif i=='A':
+        m.append('A')
+    elif i=='E':
+        m.append('E')
+    elif i=='I':
+        m.append('I')
+    elif i=='O':
+        m.append('O')
+    elif i=='U':
+        m.append('U')
+l = set(l)
+m = set(m)
+if len(l)==5:
     print(True)
-elif m==5:
+elif len(m)==5:
     print(True)
 else:
     print(False)
