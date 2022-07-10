@@ -1,5 +1,5 @@
 z = input().lower()
-for i in sorted(z):
+l = sorted(set(z))
+for i in l:
     if i>='a' and i<='z':
-        if z.count(i)==1:
-            print(i,end="")
+        print(i,end="")
