@@ -1,8 +1,7 @@
-x = list(map(str,input().split()))
-c=0
+x = list(map(str,input().lower().split()))
+s=0
 for i in x:
-    m=i.lower()
-    n = m[::-1]
-    if n==m:
-        c+=1
-print(c)
+    n = i[::-1]
+    if i==n:
+        s+=1
+print(s)
