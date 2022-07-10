@@ -1,17 +1,12 @@
-x = input()
-y = ['a','e','i','o','u']
-c=[]
-d=0
-for i in x:
-    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
-        c.append(i)
-if len(set(c))==len(y):
+x=input().lower()
+l = ['a','e','i','o','u']
+
+for i in set(x):
+    if i>='a' and i<='z':
+        if i in l:
+            l.remove(i)
+            
+if len(l)==0:
     print('0')
 else:
-    for j in y:
-        for k in list(set(c)):
-            if j==k:
-                d+=1
-        if d==0:
-            print(j,end=" ")
-        d=0
+    print(*l)
