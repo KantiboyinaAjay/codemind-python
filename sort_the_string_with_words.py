@@ -1,2 +1,2 @@
-x = list(map(str,input().split()))
-print(*sorted(x))
+l = list(map(str,input().split()))
+print(*sorted(l))
