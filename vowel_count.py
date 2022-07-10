@@ -1,6 +1,7 @@
 x = input()
-c=0
+l = ['A','E','I','O','U','a','e','i','o','u']
+s=0
 for i in x:
-    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U':
-        c+=1
-print(c)
+    if i in l:
+        s+=1
+print(s)
