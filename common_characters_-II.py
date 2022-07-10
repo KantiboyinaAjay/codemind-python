@@ -1,11 +1,10 @@
 x = input().lower()
 y = input().lower()
-l=[]
-c=0
+x = set(x)
+y = set(y)
+s=0
 for i in x:
-    if i in y:
-        l.append(i)
-for j in sorted(set(l)):
-    if j!=' ':
-        c+=1
-print(c)
+    if i!=' ':
+        if i in y:
+            s+=1
+print(s)
