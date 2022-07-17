@@ -1,9 +1,7 @@
-x = int(input())
-l = list(map(int,input().split()))
+x=int(input())
+l=list(map(int,input().split()))
 if x%2==0:
-    for i in l:
-        print(i,end=" ")
+    print(*l)
 else:
-    for i in l:
-        print(i,end=" ")
+    print(*l,end=" ")
     print('0')
