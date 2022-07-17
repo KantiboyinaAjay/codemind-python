@@ -1,16 +1,11 @@
-x = list(map(str,input().split()))
-b=[]
-c=[]
+x = input()
+l=[]
 for i in x:
-    n = max(i)
-    b.append(n)
-    m = min(i)
-    b.append(m)
-    for j in i:
-        c.append(j)
-a = min(b)
-d = max(b)
-print(a,end=" ")
-print(c.count(a),end=" ")
-print(d,end=" ")
-print(c.count(d),end=" ")
+    if i.isalnum():
+        l.append(i)
+n = max(l)
+m=min(l)
+print(m,end=" ")
+print(l.count(m),end=" ")
+print(n,end=" ")
+print(l.count(n))
