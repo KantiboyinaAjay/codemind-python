@@ -1,12 +1,10 @@
 x = int(input())
 l = list(map(int,input().split()))
 a,b=map(int,input().split())
-k=[]
-for i in range(x):
-    if l[i]>=a and l[i]<=b:
-        k.append(l[i])
-if k==[]:
+c=0
+for i in l:
+    if i>=a and i<=b:
+        print(i,end=" ")
+        c=1
+if c==0:
     print('-1')
-else:
-    for j in k:
-        print(j,end=" ")
