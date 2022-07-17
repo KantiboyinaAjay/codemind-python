@@ -1,8 +1,8 @@
 x = int(input())
 l = list(map(int,input().split()))
 a,b=map(int,input().split())
-k=[]
-for i in range(x):
-    if l[i]>=a and l[i]<=b:
-        k.append(l[i])
-print(sum(k))
+s=0
+for i in l:
+    if i>=a and i<=b:
+        s+=i
+print(s)
