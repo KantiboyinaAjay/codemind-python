@@ -1,11 +1,10 @@
-x = int(input())
-l = list(map(int,input().split()))
-k = len(l)
-c=0
-for i in l:
-    if i==0 or i==1:
-        c+=1
-if k==c:
-    print('True')
+x=int(input())
+y=input()
+s=0
+for i in y:
+    if i=='1' or i=='0':
+        s+=1
+if x==s:
+    print(True)
 else:
-    print('False')
+    print(False)
