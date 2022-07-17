@@ -1,13 +1,13 @@
-x = int(input())
-l = list(map(int,input().split()))
+x=int(input())
+l=list(map(int,input().split()))
 a,b=map(int,input().split())
-k=[]
-for i in range(x):
-    if l[i]>=a and l[i]<=b:
+m=[]
+for i in l:
+    if i>=a and i<=b:
         pass
     else:
-        k.append(l[i])
-if k==[]:
-    print('-1')
+        m.append(i)
+if m==[]:
+    print(-1)
 else:
-    print(min(k))
+    print(min(m))
