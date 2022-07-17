@@ -1,9 +1,9 @@
-x = int(input())
-l = list(map(int,input().split()))
-y = int(input())
-c=0
+x=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+s=0
 for i in l:
-    c+=i
-    if i==y:
+    if i==k:
         break
-print(c)
+    s+=i
+print(s+k)
