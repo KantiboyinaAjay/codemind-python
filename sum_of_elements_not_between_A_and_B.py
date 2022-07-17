@@ -1,10 +1,10 @@
-n=int(input())
-a=list(map(int,input().split()))
-x,y=map(int,input().split())
-c=0
-for i in range(0,n):
-    if a[i]>=x and a[i]<=y:
+x=int(input())
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+s=0
+for i in l:
+    if i>=a and i<=b:
         pass
     else:
-        c+=a[i]
-print(c)
+        s+=i
+print(s)
