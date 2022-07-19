@@ -1,17 +1,16 @@
-x = list(map(str,input().split()))
-l=[]
-y='~!@#$%^&*()_'
+x = input()
+m,n=[],[]
 for i in x:
-    for j in i:
-        if j not in y:
-            l.append(j)
-l.sort()
-k=0
+    if i.isalnum():
+        m.append(i)
+    else:
+        n.append(i)
+m.sort()
+k,l=0,0
 for i in x:
-    for j in i:
-        if j in y:
-            print(j,end="")
-        else:
-            print(l[k],end="")
-            k+=1
-    print(end=" ")
+    if i.isalnum():
+        print(m[k],end="")
+        k+=1
+    else:
+        print(n[l],end="")
+        l+=1
