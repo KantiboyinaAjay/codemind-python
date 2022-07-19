@@ -1,17 +1,17 @@
-x = list(map(str, input().split()))
-l = []
-y = 'aeiouAEIOU'
+x = list(map(str,input().split()))
+a='AEIOUaeiou'
+m=[]
 for i in x:
     for j in i:
-        if j not in y:
-            l.append(j)
-    l.sort()
-    k = 0
-    for j in i:
-        if j in y:
-            print(j, end="")
+        if j not in a:
+            m.append(j)
+    m.sort()
+    k=0
+    for j in range(len(i)):
+        if i[j] in a:
+            print(i[j],end="")
         else:
-            print(l[k], end="")
-            k += 1
+            print(m[k],end="")
+            k+=1
+    m.clear()
     print(end=" ")
-    l.clear()
