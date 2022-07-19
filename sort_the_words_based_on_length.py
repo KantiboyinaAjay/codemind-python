@@ -1,11 +1,10 @@
-l = list(map(str,input().split()))
-s=0
-m=[]
-for i in l:
+x=list(map(str,input().split()))
+l=[]
+for i in x:
+    c=0
     for j in i:
-        s+=ord(j)
-    m.append([s,i])
-    s=0
-m.sort()
-for i in m:
-    print(i[1],end=" ")
+        c+=ord(j)
+    l.append([c,i])
+l.sort()
+for a in l:
+    print(a[1],end=" ")
