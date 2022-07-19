@@ -1,12 +1,11 @@
-a = list(map(str,input().lower().split()))
-b = list(map(str,input().lower().split()))
-l=[]
-m=[]
-for i in a:
-    if i in b:
+x=list(map(str,input().lower().split()))
+y=list(map(str,input().lower().split()))
+l,m=[],[]
+for i in x:
+    if i in y:
         l.append(i)
-for i in b:
-    if i in a:
+for i in y:
+    if i in x:
         m.append(i)
 for i in m:
     if i in l:
