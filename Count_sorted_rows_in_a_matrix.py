@@ -1,11 +1,13 @@
-x , y = map(int,input().split())
-c=0
-for i in range(x):
-    l = list(map(int,input().split()))
-    n = sorted(l)
-    m = sorted(l,reverse=True)
-    if l==n:
-        c+=1
-    elif l==m:
-        c+=1
-print(c)
+a,b=map(int,input().split())
+s=0
+m=[]
+for i in range(a):
+    l=list(map(int,input().split()))
+    m.append(l)
+for i in m:
+    n=i
+    c=sorted(i)
+    i=sorted(i,reverse=True)
+    if n==i or n==c:
+        s+=1
+print(s)
