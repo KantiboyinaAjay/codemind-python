@@ -1,14 +1,14 @@
 a,b=map(int,input().split())
+l=[]
 m=[]
-n=[]
 for i in range(a):
-    u=list(map(int,input().split()))
-    m.append(u)
+    v=list(map(int,input().split()))
+    m.append(v)
 i=0
 while i!=b:
-    l=0
+    s=0
     for j in m:
-        l+=j[i]
-    n.append(l)
+        s+=j[i]
+    l.append(s)
     i+=1
-print(*n)
+print(*l)
