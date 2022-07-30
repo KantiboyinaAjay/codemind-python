@@ -1,15 +1,14 @@
-x , y = map(int,input().split())
+a,b=map(int,input().split())
 c=[]
-d=[]
-s=0
-for i in range(x):
-    l = list(map(int,input().split()))
-    c.append(l)
+m=[]
+for i in range(a):
+    l=list(map(int,input().split()))
+    m.append(l)
 i=0
-while i!=y:
-    for j in c:
-        s+=j[i]
-    d.append(s)
+while i!=b:
     s=0
+    for j in m:
+        s+=j[i]
+    c.append(s)
     i+=1
-print(max(d))
+print(max(c))
