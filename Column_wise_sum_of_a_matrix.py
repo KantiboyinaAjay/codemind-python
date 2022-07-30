@@ -1,15 +1,14 @@
-x , y = map(int,input().split())
-c=[]
-d=[]
-s=0
-for i in range(x):
-    l = list(map(int,input().split()))
-    c.append(l)
+a,b=map(int,input().split())
+m=[]
+n=[]
+for i in range(a):
+    u=list(map(int,input().split()))
+    m.append(u)
 i=0
-while i!=y:
-    for j in c:
-        s+=j[i]
-    d.append(s)
-    s=0
+while i!=b:
+    l=0
+    for j in m:
+        l+=j[i]
+    n.append(l)
     i+=1
-print(*d)
+print(*n)
