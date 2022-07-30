@@ -1,13 +1,11 @@
 a,b=map(int,input().split())
-m=[]
 s=0
+m=[]
 for i in range(a):
-    u=list(map(int,input().split()))
-    m.append(u)
+    l=list(map(int,input().split()))
+    m.append(l)
 for i in range(a):
     for j in range(b):
-        if i==0 or i==a-1:
-            s+=m[i][j]
-        elif j==0 or j==b-1:
+        if (i==0 or i==a-1) or (j==0 or j==b-1):
             s+=m[i][j]
 print(s)
