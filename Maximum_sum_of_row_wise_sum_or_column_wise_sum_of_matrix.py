@@ -1,6 +1,6 @@
-x , y = map(int,input().split())
-c=[]
-for i in range(x):
-    l = list(map(int,input().split()))
-    c.append(l)
-print(sum(max(c)))
+a,b=map(int,input().split())
+m=[]
+for i in range(a):
+    u=list(map(int,input().split()))
+    m.append(u)
+print(sum(max(m)))
