@@ -17,3 +17,6 @@ for i in range(a):
     l.append(p)
 for i in l:
     print(*i)
+    
+    
+    
